@@ -50,18 +50,23 @@ if(form){
 }
 
 // Service cards expansion
-document.querySelectorAll('.details-btn').forEach(btn => {
+document.querySelectorAll('.details-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
-    const card = this.closest('.card');
-    const isExpanded = card.classList.contains('expanded');
-    
-    if (isExpanded) {    
+    var card = this.closest('.card');
+    var isExpanded = card.classList.contains('expanded');
+    var btnText = this.querySelector('.btn-text');
+
+    if (isExpanded) {
       card.classList.remove('expanded');
+      if (btnText) btnText.textContent = 'Detalii';
     } else {
-      document.querySelectorAll('.card.expanded')
-      .forEach(c => c.classList.remove('expanded'));
+      document.querySelectorAll('.card.expanded').forEach(function(c) {
+        c.classList.remove('expanded');
+        var t = c.querySelector('.btn-text');
+        if (t) t.textContent = 'Detalii';
+      });
       card.classList.add('expanded');
+      if (btnText) btnText.textContent = 'Ascunde';
     }
-    // If already expanded, do nothing (stay open)
   });
 });
