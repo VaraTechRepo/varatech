@@ -24,6 +24,7 @@
       <nav class="nav" id="main-nav">
         <button class="nav-close" id="nav-close" aria-label="Închide meniu">✕</button>
         <a href="#servicii">Servicii</a>
+        <a href="#preturi">Prețuri</a>
         <a href="#despre">Despre</a>
         <a href="#contact">Contact</a>
         <a href="#contact" class="btn primary nav-cta">Solicită ofertă</a>
@@ -39,12 +40,13 @@
 
     <section class="hero">
       <div class="container hero-inner">
-        <h1>Digitalizăm afacerea ta —<br>rapid, eficient, local.</h1>
+        <h1>Un site profesional, gata în 10 zile —<br>de la 1.490 RON.</h1>
         <p>De la website-uri și aplicații web, la marketing digital, securitate și automatizări — soluții IT complete pentru IMM-uri din România.</p>
         <div class="hero-ctas">
-          <a href="#contact" class="btn primary">Solicită ofertă gratuită</a>
-          <a href="#servicii" class="btn outline">Descoperă serviciile</a>
+          <a href="#contact" class="btn primary">Vreau un preț pentru site-ul meu</a>
+          <a href="#servicii" class="btn outline">Vezi ce putem face pentru afacerea ta</a>
         </div>
+        <p class="hero-micro">Fără obligații. Răspuns în maximum 24h.</p>
       </div>
     </section>
 
@@ -193,6 +195,50 @@
       </div>
     </section>
 
+    <section id="preturi" class="pricing">
+      <div class="container">
+        <span class="section-label">Prețuri orientative</span>
+        <h2>Cât costă, de la ce sumă pornim</h2>
+        <p class="lead">Oferta finală depinde de complexitate — dar știi de la ce nivel pornești, nu ghicești.</p>
+        <div class="price-grid">
+
+          <article class="price-card">
+            <p class="price-tier">Pachet 1</p>
+            <h3 class="price-name">Website de prezentare</h3>
+            <p class="price-value">1.490 RON <span>/ o singură dată</span></p>
+            <ul class="price-features">
+              <li>1–4 pagini, design responsive</li>
+              <li>Formular de contact inclus</li>
+              <li>Livrare în 7–10 zile</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <p class="price-tier">Pachet 2</p>
+            <h3 class="price-name">Site + rezervări sau vânzare online</h3>
+            <p class="price-value">2.990 RON <span>/ o singură dată</span></p>
+            <ul class="price-features">
+              <li>Integrare rezervări/Google Calendar sau magazin simplu</li>
+              <li>SEO de bază + Google Business Profile</li>
+              <li>Livrare în 2–3 săptămâni</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <p class="price-tier">Pachet 3</p>
+            <h3 class="price-name">Mentenanță &amp; suport</h3>
+            <p class="price-value">149 RON <span>/ lună</span></p>
+            <ul class="price-features">
+              <li>Găzduire, backup, actualizări</li>
+              <li>Modificări mici incluse</li>
+              <li>Suport prioritar &lt;24h</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <section id="despre" class="about">
       <div class="container">
         <div class="about-inner">
@@ -240,31 +286,39 @@
                 <label for="email">Email</label>
                 <input id="email" name="email" type="email" placeholder="ex: nume@exemplu.ro" required>
               </div>
-              <div class="form-row">
-                <label for="phone">Telefon</label>
-                <input id="phone" name="phone" type="tel" placeholder="07xx xxx xxx">
+
+              <button type="button" class="form-more-btn"><span class="btn-text">Adaugă detalii (opțional)</span> <span class="btn-icon">▾</span></button>
+              <div class="form-extra">
+                <div class="form-extra-inner">
+                  <div class="form-row">
+                    <label for="phone">Telefon</label>
+                    <input id="phone" name="phone" type="tel" placeholder="07xx xxx xxx">
+                  </div>
+                  <div class="form-row">
+                    <label for="service">Serviciu</label>
+                    <select id="service" name="service">
+                      <option>Creare site</option>
+                      <option>Sisteme de rezervări</option>
+                      <option>SEO & UX</option>
+                      <option>Google Ads & Social</option>
+                      <option>Foto & Video</option>
+                      <option>Suport IT</option>
+                      <option>Meniu digital QR</option>
+                      <option>Instalare CCTV & Rețele</option>
+                      <option>Smart Home & Multimedia</option>
+                      <option>Altele</option>
+                    </select>
+                  </div>
+                  <div class="form-row">
+                    <label for="message">Mesaj</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Spune-ne cu ce te putem ajuta..."></textarea>
+                  </div>
+                </div>
               </div>
-              <div class="form-row">
-                <label for="service">Serviciu</label>
-                <select id="service" name="service">
-                  <option>Creare site</option>
-                  <option>Sisteme de rezervări</option>
-                  <option>SEO & UX</option>
-                  <option>Google Ads & Social</option>
-                  <option>Foto & Video</option>
-                  <option>Suport IT</option>
-                  <option>Meniu digital QR</option>
-                  <option>Instalare CCTV & Rețele</option>
-                  <option>Smart Home & Multimedia</option>
-                  <option>Altele</option>
-                </select>
-              </div>
-              <div class="form-row">
-                <label for="message">Mesaj</label>
-                <textarea id="message" name="message" rows="4" placeholder="Spune-ne cu ce te putem ajuta..."></textarea>
-              </div>
+
               <div class="form-actions">
-                <button type="submit" class="btn primary">Trimite mesajul</button>
+                <button type="submit" class="btn primary">Trimite — primești răspuns azi/mâine</button>
+                <p class="form-micro">Nu facem spam. Răspuns de la un om real, în maximum 24h.</p>
               </div>
             </form>
           </div>

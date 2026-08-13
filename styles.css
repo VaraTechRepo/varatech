@@ -76,6 +76,7 @@ img{display:block;max-width:100%}
 }
 .hero p{color:rgba(255,255,255,0.82);font-size:1.1rem;margin-bottom:2.5rem;line-height:1.7}
 .hero-ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.hero-micro{color:rgba(255,255,255,0.7);font-size:0.8rem;margin-top:1.1rem;margin-bottom:0}
 
 /* ── Stats ── */
 .stats{background:var(--bg-1);border-bottom:1px solid var(--border)}
@@ -124,6 +125,31 @@ h2{font-size:2.1rem;font-weight:800;letter-spacing:-0.025em;line-height:1.2;marg
 .details-inner{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)}
 .details-inner p{color:var(--muted);font-size:0.875rem;line-height:1.6;margin:0}
 
+/* ── Pricing ── */
+.pricing{padding:5rem 0;background:var(--bg-1)}
+.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:2.5rem}
+.price-card{
+  background:var(--bg-2);border-radius:var(--radius);padding:1.75rem;
+  border:1px solid var(--border);
+  transition:border-color 0.25s,box-shadow 0.25s,transform 0.25s;
+}
+.price-card:hover{border-color:var(--accent-1);box-shadow:var(--shadow-hover);transform:translateY(-3px)}
+.price-tier{
+  font-size:0.75rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:0.5rem;
+}
+.price-name{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.6rem}
+.price-value{font-size:1.5rem;font-weight:800;color:var(--accent-1);letter-spacing:-0.02em;margin-bottom:1.1rem}
+.price-value span{font-size:0.55em;font-weight:500;color:var(--muted)}
+.price-features{list-style:none;display:flex;flex-direction:column;gap:0.55rem}
+.price-features li{
+  padding-left:1.4rem;position:relative;font-size:0.875rem;color:var(--muted);line-height:1.5;
+}
+.price-features li::before{
+  content:'✓';position:absolute;left:0;top:0;
+  color:var(--accent-1);font-weight:800;font-size:0.8rem;
+}
+
 /* ── About ── */
 .about{padding:5rem 0;background:var(--bg-1)}
 .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
@@ -170,8 +196,21 @@ h2{font-size:2.1rem;font-weight:800;letter-spacing:-0.025em;line-height:1.2;marg
 .form-row input:focus,.form-row textarea:focus,.form-row select:focus{
   outline:none;border-color:var(--accent-1);box-shadow:0 0 0 3px rgba(37,99,235,0.1);
 }
+.form-more-btn{
+  display:inline-flex;align-items:center;gap:0.3rem;align-self:flex-start;
+  padding:0;background:none;border:none;
+  color:var(--accent-1);font-size:0.85rem;font-weight:600;cursor:pointer;
+  transition:color 0.2s;font-family:inherit;margin-top:-0.3rem;
+}
+.form-more-btn:hover{color:var(--accent-2)}
+.form-more-btn .btn-icon{display:inline-block;transition:transform 0.3s ease;line-height:1}
+.form-more-btn.open .btn-icon{transform:rotate(180deg)}
+.form-extra{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+.form-extra.open{max-height:400px}
+.form-extra-inner{display:flex;flex-direction:column;gap:1.1rem;padding-top:1.1rem}
 .form-actions{margin-top:0.5rem}
 .form-actions .btn{display:block;width:100%;text-align:center}
+.form-micro{color:var(--muted);font-size:0.8rem;text-align:center;margin-top:0.75rem;margin-bottom:0}
 
 /* ── Policy pages ── */
 .policy-page{max-width:780px;margin:0 auto;padding:4rem 1.5rem}

@@ -74,12 +74,27 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
+  // Formular contact — extindere câmpuri opționale
+  var formMoreBtn = document.querySelector('.form-more-btn');
+  var formExtra = document.querySelector('.form-extra');
+  if(formMoreBtn && formExtra){
+    formMoreBtn.addEventListener('click', function(){
+      var isOpen = formExtra.classList.contains('open');
+      var btnText = this.querySelector('.btn-text');
+
+      formExtra.classList.toggle('open');
+      formMoreBtn.classList.toggle('open');
+      if(btnText) btnText.textContent = isOpen ? 'Adaugă detalii (opțional)' : 'Ascunde detalii';
+    });
+  }
+
 });
 
 // Formular — trimite prin EmailJS
 var form = document.getElementById('contact-form');
 var submitBtn = document.querySelector('#contact-form button[type="submit"]');
 if(form){
+  var submitBtnDefaultText = submitBtn ? submitBtn.textContent : '';
   form.addEventListener('submit', function(e){
     e.preventDefault();
     if(typeof emailjs === 'undefined'){
@@ -92,10 +107,10 @@ if(form){
       .then(function(response){
         alert('Mesajul a fost trimis cu succes!');
         form.reset();
-        if(submitBtn) submitBtn.textContent = 'Trimite';
+        if(submitBtn) submitBtn.textContent = submitBtnDefaultText;
       }, function(error){
         alert('Eroare la trimiterea mesajului: ' + JSON.stringify(error));
-        if(submitBtn) submitBtn.textContent = 'Trimite';
+        if(submitBtn) submitBtn.textContent = submitBtnDefaultText;
       });
   });
 }
