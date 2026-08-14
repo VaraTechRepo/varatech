@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function(){
   })();
 
   // Service cards expansion
+  var t = window.VT_I18N ? window.VT_I18N.t : function(key){ return key; };
   document.querySelectorAll('.details-btn').forEach(function(btn){
     btn.addEventListener('click', function(){
       var card = this.closest('.card');
@@ -61,15 +62,15 @@ document.addEventListener('DOMContentLoaded', function(){
 
       if(isExpanded){
         card.classList.remove('expanded');
-        if(btnText) btnText.textContent = 'Detalii';
+        if(btnText) btnText.textContent = t('common.details');
       } else {
         document.querySelectorAll('.card.expanded').forEach(function(c){
           c.classList.remove('expanded');
-          var t = c.querySelector('.btn-text');
-          if(t) t.textContent = 'Detalii';
+          var ct = c.querySelector('.btn-text');
+          if(ct) ct.textContent = t('common.details');
         });
         card.classList.add('expanded');
-        if(btnText) btnText.textContent = 'Ascunde';
+        if(btnText) btnText.textContent = t('common.hide');
       }
     });
   });
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
       formExtra.classList.toggle('open');
       formMoreBtn.classList.toggle('open');
-      if(btnText) btnText.textContent = isOpen ? 'Adaugă detalii (opțional)' : 'Ascunde detalii';
+      if(btnText) btnText.textContent = isOpen ? t('form.more') : t('form.hideDetails');
     });
   }
 
@@ -94,23 +95,23 @@ document.addEventListener('DOMContentLoaded', function(){
 var form = document.getElementById('contact-form');
 var submitBtn = document.querySelector('#contact-form button[type="submit"]');
 if(form){
-  var submitBtnDefaultText = submitBtn ? submitBtn.textContent : '';
+  var tSubmit = window.VT_I18N ? window.VT_I18N.t : function(key){ return key; };
   form.addEventListener('submit', function(e){
     e.preventDefault();
     if(typeof emailjs === 'undefined'){
-      alert('Serviciul de email nu este disponibil. Încearcă mai târziu.');
+      alert(tSubmit('common.emailUnavailable'));
       return;
     }
-    if(submitBtn) submitBtn.textContent = 'Se trimite...';
+    if(submitBtn) submitBtn.textContent = tSubmit('common.sending');
 
     emailjs.sendForm('service_oi33mbj', 'template_cg1uwn3', form)
       .then(function(response){
-        alert('Mesajul a fost trimis cu succes!');
+        alert(tSubmit('common.sendSuccess'));
         form.reset();
-        if(submitBtn) submitBtn.textContent = submitBtnDefaultText;
+        if(submitBtn) submitBtn.textContent = tSubmit('form.submit');
       }, function(error){
-        alert('Eroare la trimiterea mesajului: ' + JSON.stringify(error));
-        if(submitBtn) submitBtn.textContent = submitBtnDefaultText;
+        alert(tSubmit('common.sendError') + JSON.stringify(error));
+        if(submitBtn) submitBtn.textContent = tSubmit('form.submit');
       });
   });
 }

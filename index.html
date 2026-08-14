@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Varatech — Soluții IT pentru afaceri din România</title>
+  <title data-i18n="title">Varatech — Soluții IT pentru afaceri din România</title>
   <meta name="description" content="Varatech: website-uri, aplicații web, SEO, Google Ads, suport IT, CCTV și automatizări pentru IMM-uri din Oradea și România.">
   <meta name="keywords" content="varatech, IT Oradea, web design Romania, aplicatii web, SEO, Google Ads, CCTV, smart home, suport IT">
   <meta property="og:title" content="Varatech — Soluții IT pentru afaceri">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -22,14 +22,20 @@
     <div class="container header-inner">
       <a class="logo" href="#">Varatech</a>
       <nav class="nav" id="main-nav">
-        <button class="nav-close" id="nav-close" aria-label="Închide meniu">✕</button>
-        <a href="#servicii">Servicii</a>
-        <a href="#preturi">Prețuri</a>
-        <a href="#despre">Despre</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" class="btn primary nav-cta">Solicită ofertă</a>
+        <button class="nav-close" id="nav-close" data-i18n-aria="nav.close" aria-label="Închide meniu">✕</button>
+        <a href="#servicii" data-i18n="nav.servicii">Servicii</a>
+        <a href="#proiecte" data-i18n="nav.proiecte">Proiecte</a>
+        <a href="#preturi" data-i18n="nav.preturi">Prețuri</a>
+        <a href="#despre" data-i18n="nav.despre">Despre</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#contact" class="btn primary nav-cta magnetic" data-i18n="nav.cta">Solicită ofertă</a>
+        <div class="lang-switch" role="group" aria-label="Limbă / Language">
+          <button type="button" class="lang-btn active" data-lang="ro">RO</button>
+          <span class="lang-sep">|</span>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
       </nav>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Meniu">
+      <button id="nav-toggle" class="nav-toggle" data-i18n-aria="nav.toggle" aria-label="Meniu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -40,13 +46,13 @@
 
     <section class="hero">
       <div class="container hero-inner">
-        <h1>Un site profesional, gata în 10 zile —<br>de la 1.490 RON.</h1>
-        <p>De la website-uri și aplicații web, la marketing digital, securitate și automatizări — soluții IT complete pentru IMM-uri din România.</p>
+        <h1 data-i18n="hero.h1">Un site profesional, gata în 10 zile — de la 1.490&nbsp;RON.</h1>
+        <p data-i18n="hero.p">De la website-uri și aplicații web, la marketing digital, securitate și automatizări — soluții IT complete pentru IMM-uri din România.</p>
         <div class="hero-ctas">
-          <a href="#contact" class="btn primary">Vreau un preț pentru site-ul meu</a>
-          <a href="#servicii" class="btn outline">Vezi ce putem face pentru afacerea ta</a>
+          <a href="#contact" class="btn primary magnetic" data-i18n="hero.cta1">Vreau un preț pentru site-ul meu</a>
+          <a href="#servicii" class="btn outline magnetic" data-i18n="hero.cta2">Vezi ce putem face pentru afacerea ta</a>
         </div>
-        <p class="hero-micro">Fără obligații. Răspuns în maximum 24h.</p>
+        <p class="hero-micro" data-i18n="hero.micro">Fără obligații. Răspuns în maximum 24h.</p>
       </div>
     </section>
 
@@ -54,75 +60,75 @@
       <div class="container stats-grid">
         <div class="stat">
           <span class="stat-num">3+</span>
-          <span class="stat-label">Ani de experiență</span>
+          <span class="stat-label" data-i18n="stats.label1">Ani de experiență</span>
         </div>
         <div class="stat">
-          <span class="stat-num">0</span>
-          <span class="stat-label">Intermediari — lucrezi direct cu mine</span>
+          <span class="stat-num stat-num-warm">0</span>
+          <span class="stat-label" data-i18n="stats.label2">Intermediari — lucrezi direct cu mine</span>
         </div>
         <div class="stat">
           <span class="stat-num">24h</span>
-          <span class="stat-label">Timp de răspuns</span>
+          <span class="stat-label" data-i18n="stats.label3">Timp de răspuns</span>
         </div>
       </div>
     </section>
 
     <section id="servicii" class="services">
       <div class="container">
-        <span class="section-label">Ce oferim</span>
-        <h2>Servicii complete pentru afacerea ta</h2>
-        <p class="lead">Fiecare afacere e unică. Ne adaptăm la nevoile tale cu soluții testate și eficiente.</p>
+        <span class="section-label reveal" data-i18n="services.label">Ce oferim</span>
+        <h2 class="reveal" data-i18n="services.h2">Servicii complete pentru afacerea ta</h2>
+        <p class="lead reveal" data-i18n="services.lead">Fiecare afacere e unică. Ne adaptăm la nevoile tale cu soluții testate și eficiente.</p>
         <div class="services-grid">
 
-          <article class="card">
+          <article class="card reveal">
             <div class="icon-wrap">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16,18 22,12 16,6"></polyline><polyline points="8,6 2,12 8,18"></polyline></svg>
             </div>
-            <h3>Creare site & aplicații web</h3>
-            <p>Website-uri rapide, atractive și orientate spre rezultate.</p>
-            <button class="details-btn"><span class="btn-text">Detalii</span> <span class="btn-icon">▾</span></button>
+            <h3 data-i18n="service1.title">Creare site & aplicații web</h3>
+            <p data-i18n="service1.desc">Website-uri rapide, atractive și orientate spre rezultate.</p>
+            <button class="details-btn"><span class="btn-text" data-i18n="common.details">Detalii</span> <span class="btn-icon">▾</span></button>
             <div class="details">
-              <div class="details-inner"><p>Proiectăm și dezvoltăm website-uri personalizate și aplicații web pentru vânzări online, rezervări și managementul afacerii. Design modern, optimizat pentru orice dispozitiv.</p></div>
+              <div class="details-inner"><p data-i18n="service1.details">Proiectăm și dezvoltăm website-uri personalizate și aplicații web pentru vânzări online, rezervări și managementul afacerii. Design modern, optimizat pentru orice dispozitiv.</p></div>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="icon-wrap">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
             </div>
-            <h3>Sisteme de rezervări</h3>
-            <p>Rezervări online automatizate, fără efort din partea ta.</p>
-            <button class="details-btn"><span class="btn-text">Detalii</span> <span class="btn-icon">▾</span></button>
+            <h3 data-i18n="service2.title">Sisteme de rezervări</h3>
+            <p data-i18n="service2.desc">Rezervări online automatizate, fără efort din partea ta.</p>
+            <button class="details-btn"><span class="btn-text" data-i18n="common.details">Detalii</span> <span class="btn-icon">▾</span></button>
             <div class="details">
-              <div class="details-inner"><p>Soluții intuitive de programări online, sincronizate cu Google Calendar, cu notificări automate și management complet al clienților.</p></div>
+              <div class="details-inner"><p data-i18n="service2.details">Soluții intuitive de programări online, sincronizate cu Google Calendar, cu notificări automate și management complet al clienților.</p></div>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="icon-wrap">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
             </div>
-            <h3>Optimizare SEO & UX</h3>
-            <p>Fii găsit. Fii ales.</p>
-            <button class="details-btn"><span class="btn-text">Detalii</span> <span class="btn-icon">▾</span></button>
+            <h3 data-i18n="service3.title">Optimizare SEO & UX</h3>
+            <p data-i18n="service3.desc">Fii găsit. Fii ales.</p>
+            <button class="details-btn"><span class="btn-text" data-i18n="common.details">Detalii</span> <span class="btn-icon">▾</span></button>
             <div class="details">
-              <div class="details-inner"><p>Creștem vizibilitatea site-ului tău în căutările locale, optimizăm experiența utilizatorilor și îmbunătățim rata de conversie.</p></div>
+              <div class="details-inner"><p data-i18n="service3.details">Creștem vizibilitatea site-ului tău în căutările locale, optimizăm experiența utilizatorilor și îmbunătățim rata de conversie.</p></div>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="icon-wrap">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 0 1-5.8-1.6"></path></svg>
             </div>
-            <h3>Promovare Google Ads & Social</h3>
-            <p>Campanii care aduc clienți, nu doar click-uri.</p>
-            <button class="details-btn"><span class="btn-text">Detalii</span> <span class="btn-icon">▾</span></button>
+            <h3 data-i18n="service4.title">Promovare Google Ads & Social</h3>
+            <p data-i18n="service4.desc">Campanii care aduc clienți, nu doar click-uri.</p>
+            <button class="details-btn"><span class="btn-text" data-i18n="common.details">Detalii</span> <span class="btn-icon">▾</span></button>
             <div class="details">
-              <div class="details-inner"><p>Campanii eficiente pe Google și rețele sociale, orientate spre clienți locali, cu rezultate clare și măsurabile.</p></div>
+              <div class="details-inner"><p data-i18n="service4.details">Campanii eficiente pe Google și rețele sociale, orientate spre clienți locali, cu rezultate clare și măsurabile.</p></div>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="icon-wrap">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 11v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8H4Z"></path>
@@ -131,59 +137,59 @@
                 <path d="m11.86 3.38 3.38 4.2"></path>
               </svg>
             </div>
-            <h3>Servicii foto & video</h3>
-            <p>Conținut vizual care face diferența.</p>
-            <button class="details-btn"><span class="btn-text">Detalii</span> <span class="btn-icon">▾</span></button>
+            <h3 data-i18n="service5.title">Servicii foto & video</h3>
+            <p data-i18n="service5.desc">Conținut vizual care face diferența.</p>
+            <button class="details-btn"><span class="btn-text" data-i18n="common.details">Detalii</span> <span class="btn-icon">▾</span></button>
             <div class="details">
-              <div class="details-inner"><p>Fotografii de produs, video-uri promoționale și sesiuni foto pentru social media — conținut profesional care prezintă afacerea ta la cel mai înalt nivel.</p></div>
+              <div class="details-inner"><p data-i18n="service5.details">Fotografii de produs, video-uri promoționale și sesiuni foto pentru social media — conținut profesional care prezintă afacerea ta la cel mai înalt nivel.</p></div>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="icon-wrap">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
             </div>
-            <h3>Suport IT & Configurații PC</h3>
-            <p>IT fără bătăi de cap.</p>
-            <button class="details-btn"><span class="btn-text">Detalii</span> <span class="btn-icon">▾</span></button>
+            <h3 data-i18n="service6.title">Suport IT & Configurații PC</h3>
+            <p data-i18n="service6.desc">IT fără bătăi de cap.</p>
+            <button class="details-btn"><span class="btn-text" data-i18n="common.details">Detalii</span> <span class="btn-icon">▾</span></button>
             <div class="details">
-              <div class="details-inner"><p>Administrare rețele, configurare PC-uri, backup-uri sigure și intervenții rapide on-site sau remote, pentru continuitatea afacerii tale.</p></div>
+              <div class="details-inner"><p data-i18n="service6.details">Administrare rețele, configurare PC-uri, backup-uri sigure și intervenții rapide on-site sau remote, pentru continuitatea afacerii tale.</p></div>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="icon-wrap">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
             </div>
-            <h3>Meniuri digitale cu QR</h3>
-            <p>Meniuri moderne, fără costuri de printare.</p>
-            <button class="details-btn"><span class="btn-text">Detalii</span> <span class="btn-icon">▾</span></button>
+            <h3 data-i18n="service7.title">Meniuri digitale cu QR</h3>
+            <p data-i18n="service7.desc">Meniuri moderne, fără costuri de printare.</p>
+            <button class="details-btn"><span class="btn-text" data-i18n="common.details">Detalii</span> <span class="btn-icon">▾</span></button>
             <div class="details">
-              <div class="details-inner"><p>Meniuri interactive pentru restaurante și cafenele, actualizabile instant, accesibile printr-un simplu cod QR. Fără hârtie, fără costuri suplimentare.</p></div>
+              <div class="details-inner"><p data-i18n="service7.details">Meniuri interactive pentru restaurante și cafenele, actualizabile instant, accesibile printr-un simplu cod QR. Fără hârtie, fără costuri suplimentare.</p></div>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="icon-wrap">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path></svg>
             </div>
-            <h3>Instalare CCTV & Rețele</h3>
-            <p>Securitate și conectivitate pentru afacerea ta.</p>
-            <button class="details-btn"><span class="btn-text">Detalii</span> <span class="btn-icon">▾</span></button>
+            <h3 data-i18n="service8.title">Instalare CCTV & Rețele</h3>
+            <p data-i18n="service8.desc">Securitate și conectivitate pentru afacerea ta.</p>
+            <button class="details-btn"><span class="btn-text" data-i18n="common.details">Detalii</span> <span class="btn-icon">▾</span></button>
             <div class="details">
-              <div class="details-inner"><p>Instalăm sisteme de supraveghere video, rețele cablate și wireless, cu monitorizare 24/7 și securitate avansată.</p></div>
+              <div class="details-inner"><p data-i18n="service8.details">Instalăm sisteme de supraveghere video, rețele cablate și wireless, cu monitorizare 24/7 și securitate avansată.</p></div>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <div class="icon-wrap">
               <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9,22 9,12 15,12 15,22"></polyline></svg>
             </div>
-            <h3>Smart Home & Multimedia</h3>
-            <p>Spații inteligente, experiențe premium.</p>
-            <button class="details-btn"><span class="btn-text">Detalii</span> <span class="btn-icon">▾</span></button>
+            <h3 data-i18n="service9.title">Smart Home & Multimedia</h3>
+            <p data-i18n="service9.desc">Spații inteligente, experiențe premium.</p>
+            <button class="details-btn"><span class="btn-text" data-i18n="common.details">Detalii</span> <span class="btn-icon">▾</span></button>
             <div class="details">
-              <div class="details-inner"><p>Automatizări smart home și sisteme multimedia profesionale pentru locuințe și spații comerciale — confort, eficiență și o imagine modernă.</p></div>
+              <div class="details-inner"><p data-i18n="service9.details">Automatizări smart home și sisteme multimedia profesionale pentru locuințe și spații comerciale — confort, eficiență și o imagine modernă.</p></div>
             </div>
           </article>
 
@@ -191,43 +197,62 @@
       </div>
     </section>
 
+    <section id="proiecte" class="portfolio">
+      <div class="container">
+        <span class="section-label reveal" data-i18n="portfolio.label">Portofoliu</span>
+        <h2 class="reveal" data-i18n="portfolio.h2">Un proiect real, live acum</h2>
+        <p class="lead reveal" data-i18n="portfolio.lead">Sunt la început de drum ca antreprenor, dar iată o dovadă concretă a ce pot construi — nu doar vorbe goale.</p>
+        <div class="portfolio-showcase">
+          <div class="portfolio-images reveal">
+            <img src="imgs/portfolio/honeytransylvania-hero.jpg" data-i18n-alt="portfolio.imgAlt1" alt="Pagina principală honeytransylvania.ro" loading="lazy">
+            <img src="imgs/portfolio/honeytransylvania-galerie.jpg" data-i18n-alt="portfolio.imgAlt2" alt="Galeria foto de pe honeytransylvania.ro" loading="lazy">
+          </div>
+          <div class="portfolio-info reveal">
+            <h3>honeytransylvania.ro</h3>
+            <p data-i18n="portfolio.desc">Site de prezentare pentru un apicultor din Munții Apuseni — design premium, poveste de brand, galerie foto și formular de contact. Live, funcțional, 100% verificabil.</p>
+            <a href="https://honeytransylvania.ro/" target="_blank" rel="noopener" class="btn primary magnetic" data-i18n="portfolio.cta">Vezi site-ul live →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="preturi" class="pricing">
       <div class="container">
-        <span class="section-label">Prețuri orientative</span>
-        <h2>Cât costă, de la ce sumă pornim</h2>
-        <p class="lead">Oferta finală depinde de complexitate — dar știi de la ce nivel pornești, nu ghicești.</p>
+        <span class="section-label reveal" data-i18n="pricing.label">Prețuri orientative</span>
+        <h2 class="reveal" data-i18n="pricing.h2">Cât costă, de la ce sumă pornim</h2>
+        <p class="lead reveal" data-i18n="pricing.lead">Oferta finală depinde de complexitate — dar știi de la ce nivel pornești, nu ghicești.</p>
         <div class="price-grid">
 
-          <article class="price-card">
-            <p class="price-tier">Pachet 1</p>
-            <h3 class="price-name">Website de prezentare</h3>
-            <p class="price-value">1.490 RON <span>/ o singură dată</span></p>
+          <article class="price-card reveal">
+            <p class="price-tier" data-i18n="price1.tier">Pachet 1</p>
+            <h3 class="price-name" data-i18n="price1.name">Website de prezentare</h3>
+            <p class="price-value">1.490 RON <span data-i18n="pricing.onetime">/ o singură dată</span></p>
             <ul class="price-features">
-              <li>1–4 pagini, design responsive</li>
-              <li>Formular de contact inclus</li>
-              <li>Livrare în 7–10 zile</li>
+              <li data-i18n="price1.f1">1–4 pagini, design responsive</li>
+              <li data-i18n="price1.f2">Formular de contact inclus</li>
+              <li data-i18n="price1.f3">Livrare în 7–10 zile</li>
             </ul>
           </article>
 
-          <article class="price-card">
-            <p class="price-tier">Pachet 2</p>
-            <h3 class="price-name">Site + rezervări sau vânzare online</h3>
-            <p class="price-value">2.990 RON <span>/ o singură dată</span></p>
+          <article class="price-card reveal">
+            <p class="price-tier" data-i18n="price2.tier">Pachet 2</p>
+            <h3 class="price-name" data-i18n="price2.name">Site + rezervări sau vânzare online</h3>
+            <p class="price-value">2.990 RON <span data-i18n="pricing.onetime">/ o singură dată</span></p>
             <ul class="price-features">
-              <li>Integrare rezervări/Google Calendar sau magazin simplu</li>
-              <li>SEO de bază + Google Business Profile</li>
-              <li>Livrare în 2–3 săptămâni</li>
+              <li data-i18n="price2.f1">Integrare rezervări/Google Calendar sau magazin simplu</li>
+              <li data-i18n="price2.f2">SEO de bază + Google Business Profile</li>
+              <li data-i18n="price2.f3">Livrare în 2–3 săptămâni</li>
             </ul>
           </article>
 
-          <article class="price-card">
-            <p class="price-tier">Pachet 3</p>
-            <h3 class="price-name">Mentenanță &amp; suport</h3>
-            <p class="price-value">149 RON <span>/ lună</span></p>
+          <article class="price-card reveal">
+            <p class="price-tier" data-i18n="price3.tier">Pachet 3</p>
+            <h3 class="price-name" data-i18n="price3.name">Mentenanță &amp; suport</h3>
+            <p class="price-value">149 RON <span data-i18n="price3.period">/ lună</span></p>
             <ul class="price-features">
-              <li>Găzduire, backup, actualizări</li>
-              <li>Modificări mici incluse</li>
-              <li>Suport prioritar &lt;24h</li>
+              <li data-i18n="price3.f1">Găzduire, backup, actualizări</li>
+              <li data-i18n="price3.f2">Modificări mici incluse</li>
+              <li data-i18n="price3.f3">Suport prioritar &lt;24h</li>
             </ul>
           </article>
 
@@ -238,22 +263,23 @@
     <section id="despre" class="about">
       <div class="container">
         <div class="about-inner">
-          <div class="about-image">
+          <div class="about-image reveal">
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
               alt="Dezvoltare web și aplicații personalizate"
+              data-i18n-alt="about.imgAlt"
               loading="lazy"
             >
           </div>
-          <div class="about-content">
-            <span class="section-label">Despre mine</span>
-            <h2>Cine sunt</h2>
-            <p>Lucrezi direct cu mine — dezvoltatorul care îți face site-ul, nu cu un call-center sau o agenție aglomerată. Sunt la început de drum ca antreprenor din Oradea, dar cu experiență tehnică reală: am livrat <a href="https://honeytransylvania.ro" target="_blank" rel="noopener">honeytransylvania.ro</a> și magazine online cu WooCommerce. Comunic direct, lucrez rapid și îți spun onest dacă ceva nu se poate face, în loc să-ți promit orice ca să semnezi.</p>
+          <div class="about-content reveal">
+            <span class="section-label" data-i18n="about.label">Despre mine</span>
+            <h2 data-i18n="about.h2">Cine sunt</h2>
+            <p data-i18n-html="about.p">Lucrezi direct cu mine — dezvoltatorul care îți face site-ul, nu cu un call-center sau o agenție aglomerată. Sunt la început de drum ca antreprenor din Oradea, dar cu experiență tehnică reală: am livrat <a href="https://honeytransylvania.ro" target="_blank" rel="noopener">honeytransylvania.ro</a> și magazine online cu WooCommerce. Comunic direct, lucrez rapid și îți spun onest dacă ceva nu se poate face, în loc să-ți promit orice ca să semnezi.</p>
             <ul class="feature-list">
-              <li>Experiență locală — cunosc piața românească</li>
-              <li>Soluții personalizate pentru fiecare proiect</li>
-              <li>Suport tehnic continuu după livrare</li>
-              <li>Răspuns garantat în maximum 24 de ore</li>
+              <li data-i18n="about.f1">Experiență locală — cunosc piața românească</li>
+              <li data-i18n="about.f2">Soluții personalizate pentru fiecare proiect</li>
+              <li data-i18n="about.f3">Suport tehnic continuu după livrare</li>
+              <li data-i18n="about.f4">Răspuns garantat în maximum 24 de ore</li>
             </ul>
           </div>
         </div>
@@ -263,58 +289,58 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="contact-inner">
-          <div class="contact-info">
-            <span class="section-label">Contact</span>
-            <h2>Hai să vorbim</h2>
-            <p class="lead">O consultanță gratuită poate fi primul pas. Scrie-ne și îți răspundem în cel mult 24 de ore.</p>
+          <div class="contact-info reveal">
+            <span class="section-label" data-i18n="contact.label">Contact</span>
+            <h2 data-i18n="contact.h2">Hai să vorbim</h2>
+            <p class="lead" data-i18n="contact.lead">O consultanță gratuită poate fi primul pas. Scrie-ne și îți răspundem în cel mult 24 de ore.</p>
             <div class="contact-details">
               <a href="mailto:contact.varatech@gmail.com">✉️ contact.varatech@gmail.com</a>
-              <span>📍 Oradea, Bihor, România</span>
+              <span data-i18n="contact.location">📍 Oradea, Bihor, România</span>
             </div>
           </div>
-          <div class="contact-form-wrap">
+          <div class="contact-form-wrap reveal">
             <form id="contact-form" class="contact-form">
               <div class="form-row">
-                <label for="name">Nume</label>
-                <input id="name" name="name" type="text" placeholder="Nume și prenume" required>
+                <label for="name" data-i18n="form.name">Nume</label>
+                <input id="name" name="name" type="text" placeholder="Nume și prenume" data-i18n-placeholder="form.namePh" required>
               </div>
               <div class="form-row">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="ex: nume@exemplu.ro" required>
+                <label for="email" data-i18n="form.email">Email</label>
+                <input id="email" name="email" type="email" placeholder="ex: nume@exemplu.ro" data-i18n-placeholder="form.emailPh" required>
               </div>
 
-              <button type="button" class="form-more-btn"><span class="btn-text">Adaugă detalii (opțional)</span> <span class="btn-icon">▾</span></button>
+              <button type="button" class="form-more-btn"><span class="btn-text" data-i18n="form.more">Adaugă detalii (opțional)</span> <span class="btn-icon">▾</span></button>
               <div class="form-extra">
                 <div class="form-extra-inner">
                   <div class="form-row">
-                    <label for="phone">Telefon</label>
+                    <label for="phone" data-i18n="form.phone">Telefon</label>
                     <input id="phone" name="phone" type="tel" placeholder="07xx xxx xxx">
                   </div>
                   <div class="form-row">
-                    <label for="service">Serviciu</label>
+                    <label for="service" data-i18n="form.service">Serviciu</label>
                     <select id="service" name="service">
-                      <option>Creare site</option>
-                      <option>Sisteme de rezervări</option>
-                      <option>SEO & UX</option>
-                      <option>Google Ads & Social</option>
-                      <option>Foto & Video</option>
-                      <option>Suport IT</option>
-                      <option>Meniu digital QR</option>
-                      <option>Instalare CCTV & Rețele</option>
-                      <option>Smart Home & Multimedia</option>
-                      <option>Altele</option>
+                      <option value="Creare site & aplicații web" data-i18n="opt.site">Creare site & aplicații web</option>
+                      <option value="Sisteme de rezervări" data-i18n="opt.booking">Sisteme de rezervări</option>
+                      <option value="SEO & UX" data-i18n="opt.seo">SEO & UX</option>
+                      <option value="Google Ads & Social" data-i18n="opt.ads">Google Ads & Social</option>
+                      <option value="Foto & Video" data-i18n="opt.photo">Foto & Video</option>
+                      <option value="Suport IT" data-i18n="opt.it">Suport IT</option>
+                      <option value="Meniu digital QR" data-i18n="opt.qr">Meniu digital QR</option>
+                      <option value="Instalare CCTV & Rețele" data-i18n="opt.cctv">Instalare CCTV & Rețele</option>
+                      <option value="Smart Home & Multimedia" data-i18n="opt.smarthome">Smart Home & Multimedia</option>
+                      <option value="Altele" data-i18n="opt.other">Altele</option>
                     </select>
                   </div>
                   <div class="form-row">
-                    <label for="message">Mesaj</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Spune-ne cu ce te putem ajuta..."></textarea>
+                    <label for="message" data-i18n="form.message">Mesaj</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Spune-ne cu ce te putem ajuta..." data-i18n-placeholder="form.messagePh"></textarea>
                   </div>
                 </div>
               </div>
 
               <div class="form-actions">
-                <button type="submit" class="btn primary">Trimite — primești răspuns azi/mâine</button>
-                <p class="form-micro">Nu facem spam. Răspuns de la un om real, în maximum 24h.</p>
+                <button type="submit" class="btn primary" data-i18n="form.submit">Trimite — primești răspuns azi/mâine</button>
+                <p class="form-micro" data-i18n="form.micro">Nu facem spam. Răspuns de la un om real, în maximum 24h.</p>
               </div>
             </form>
           </div>
@@ -329,17 +355,17 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <strong>Varatech</strong>
-          <p>Soluții IT complete pentru IMM-uri din România — web, marketing digital, securitate și automatizări.</p>
+          <p data-i18n="footer.brandP">Soluții IT complete pentru IMM-uri din România — web, marketing digital, securitate și automatizări.</p>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h4 data-i18n="contact.label">Contact</h4>
           <a href="mailto:contact.varatech@gmail.com">contact.varatech@gmail.com</a>
-          <span>Oradea, Bihor, România</span>
+          <span data-i18n="footer.location">Oradea, Bihor, România</span>
         </div>
         <div class="footer-col">
-          <h4>Legal</h4>
-          <a href="privacy.html">Politică de Confidențialitate</a>
-          <a href="cookies.html">Politică Cookie</a>
+          <h4 data-i18n="footer.legalH4">Legal</h4>
+          <a href="privacy.html" data-i18n="footer.privacy">Politică de Confidențialitate</a>
+          <a href="cookies.html" data-i18n="footer.cookiePolicy">Politică Cookie</a>
           <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer">ANPC</a>
           <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">SOL / ODR</a>
         </div>
@@ -348,26 +374,28 @@
         <p><strong>APAR ROCOM SRL</strong> — CUI: RO52015780 | Nr. Reg. Com.: J2025044753006 | Sediu social: Oradea, Bihor, România</p>
       </div>
       <div class="footer-bottom">
-        <p class="footer-muted">© <span id="year"></span> Varatech — Toate drepturile rezervate</p>
+        <p class="footer-muted">© <span id="year"></span> <span data-i18n="footer.rights">Varatech — Toate drepturile rezervate</span></p>
         <div class="footer-links-legal">
-          <a href="privacy.html">Confidențialitate</a>
-          <a href="cookies.html">Cookie-uri</a>
+          <a href="privacy.html" data-i18n="footer.confidentialitate">Confidențialitate</a>
+          <a href="cookies.html" data-i18n="footer.cookieuri">Cookie-uri</a>
           <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer">ANPC</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Consimțământ cookie-uri">
-    <p>Folosim cookie-uri esențiale pentru funcționarea site-ului. <a href="cookies.html">Politică Cookie</a></p>
+  <div class="cookie-banner" id="cookie-banner" role="dialog" data-i18n-aria="cookie.ariaLabel" aria-label="Consimțământ cookie-uri">
+    <p data-i18n-html="cookie.text">Folosim cookie-uri esențiale pentru funcționarea site-ului. <a href="cookies.html">Politică Cookie</a></p>
     <div class="cookie-actions">
-      <button class="btn-cookie-reject" id="cookie-reject">Refuz</button>
-      <button class="btn-cookie-accept" id="cookie-accept">Accept</button>
+      <button class="btn-cookie-reject" id="cookie-reject" data-i18n="cookie.reject">Refuz</button>
+      <button class="btn-cookie-accept" id="cookie-accept" data-i18n="cookie.accept">Accept</button>
     </div>
   </div>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">emailjs.init('06xU3LVx1te-rWvgG')</script>
+  <script src="i18n.js"></script>
+  <script src="interactions.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
