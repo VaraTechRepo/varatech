@@ -19,7 +19,7 @@
       'hero.micro': 'Fără obligații. Răspuns în maximum 24h.',
 
       'stats.label1': 'Ani de experiență',
-      'stats.label2': 'Intermediari — lucrezi direct cu mine',
+      'stats.label2': 'Intermediari — colaborare directă',
       'stats.label3': 'Timp de răspuns',
 
       'services.label': 'Ce oferim',
@@ -63,7 +63,7 @@
 
       'portfolio.label': 'Portofoliu',
       'portfolio.h2': 'Un proiect real, live acum',
-      'portfolio.lead': 'Sunt la început de drum ca antreprenor, dar iată o dovadă concretă a ce pot construi — nu doar vorbe goale.',
+      'portfolio.lead': 'Sunt la început de drum ca dezvoltator independent, dar iată o dovadă concretă a ce pot construi — nu doar vorbe goale.',
       'portfolio.desc': 'Site de prezentare pentru un apicultor din Munții Apuseni — design premium, poveste de brand, galerie foto și formular de contact. Live, funcțional, 100% verificabil.',
       'portfolio.cta': 'Vezi site-ul live →',
       'portfolio.imgAlt1': 'Pagina principală honeytransylvania.ro',
@@ -92,7 +92,7 @@
 
       'about.label': 'Despre mine',
       'about.h2': 'Cine sunt',
-      'about.p': 'Lucrezi direct cu mine — dezvoltatorul care îți face site-ul, nu cu un call-center sau o agenție aglomerată. Sunt la început de drum ca antreprenor din Oradea, dar cu experiență tehnică reală: am livrat <a href="https://honeytransylvania.ro" target="_blank" rel="noopener">honeytransylvania.ro</a> și magazine online cu WooCommerce. Comunic direct, lucrez rapid și îți spun onest dacă ceva nu se poate face, în loc să-ți promit orice ca să semnezi.',
+      'about.p': 'Colaborare apropiată, fără intermediari sau birocrația specifică agențiilor. Sunt un dezvoltator web independent din Oradea, cu o experiență tehnică solidă, confirmată de proiecte precum <a href="https://honeytransylvania.ro" target="_blank" rel="noopener">honeytransylvania.ro</a> și diverse magazine online dezvoltate pe WooCommerce. Pun preț pe eficiență și pe onestitate: îți voi spune mereu, cu maximă transparență, ce este fezabil pentru proiectul tău, oferindu-ți soluții reale, nu doar promisiuni pentru a semna un contract.',
       'about.imgAlt': 'Dezvoltare web și aplicații personalizate',
       'about.f1': 'Experiență locală — cunosc piața românească',
       'about.f2': 'Soluții personalizate pentru fiecare proiect',
@@ -160,7 +160,7 @@
       'hero.micro': 'No obligations. Reply within 24h.',
 
       'stats.label1': 'Years of experience',
-      'stats.label2': 'Middlemen — you work directly with me',
+      'stats.label2': 'Middlemen — direct collaboration',
       'stats.label3': 'Response time',
 
       'services.label': 'What we offer',
@@ -204,7 +204,7 @@
 
       'portfolio.label': 'Portfolio',
       'portfolio.h2': 'A real project, live right now',
-      'portfolio.lead': "I'm just starting out as an entrepreneur, but here's concrete proof of what I can build — not just words.",
+      'portfolio.lead': "I'm just starting out as an independent developer, but here's concrete proof of what I can build — not just words.",
       'portfolio.desc': 'A presentation website for a beekeeper in the Apuseni Mountains — premium design, brand story, photo gallery, and contact form. Live, functional, 100% verifiable.',
       'portfolio.cta': 'See the live site →',
       'portfolio.imgAlt1': 'honeytransylvania.ro homepage',
@@ -233,7 +233,7 @@
 
       'about.label': 'About me',
       'about.h2': 'Who I am',
-      'about.p': "You work directly with me — the developer who builds your site, not a call center or a busy agency. I'm just starting out as an entrepreneur from Oradea, but with real technical experience: I've built <a href=\"https://honeytransylvania.ro\" target=\"_blank\" rel=\"noopener\">honeytransylvania.ro</a> and WooCommerce online stores. I communicate directly, work fast, and tell you honestly if something can't be done, instead of promising anything just to get you to sign.",
+      'about.p': "A close collaboration, without intermediaries or the bureaucracy typical of agencies. I'm an independent web developer from Oradea, with solid technical experience, confirmed by projects such as <a href=\"https://honeytransylvania.ro\" target=\"_blank\" rel=\"noopener\">honeytransylvania.ro</a> and various online stores built on WooCommerce. I value efficiency and honesty: I will always tell you, with full transparency, what is feasible for your project, offering real solutions — not just promises to get a contract signed.",
       'about.imgAlt': 'Web development and custom applications',
       'about.f1': 'Local experience — I know the Romanian market',
       'about.f2': 'Custom solutions for every project',
