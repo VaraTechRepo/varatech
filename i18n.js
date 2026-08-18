@@ -138,7 +138,7 @@
       'footer.cookieuri': 'Cookie-uri',
 
       'cookie.ariaLabel': 'Consimțământ cookie-uri',
-      'cookie.text': 'Folosim cookie-uri esențiale pentru funcționarea site-ului. <a href="cookies.html">Politică Cookie</a>',
+      'cookie.text': 'Folosim cookie-uri esențiale pentru funcționarea site-ului. Dacă apeși Accept, activăm și Google Analytics pentru statistici de trafic. <a href="cookies.html">Politică Cookie</a>',
       'cookie.reject': 'Refuz',
       'cookie.accept': 'Accept'
     },
@@ -279,7 +279,7 @@
       'footer.cookieuri': 'Cookies',
 
       'cookie.ariaLabel': 'Cookie consent',
-      'cookie.text': 'We use essential cookies for the site to function properly. <a href="cookies.html">Cookie Policy</a>',
+      'cookie.text': 'We use essential cookies for the site to function properly. If you click Accept, we also enable Google Analytics for traffic statistics. <a href="cookies.html">Cookie Policy</a>',
       'cookie.reject': 'Decline',
       'cookie.accept': 'Accept'
     }

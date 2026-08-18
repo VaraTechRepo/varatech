@@ -31,11 +31,29 @@ document.addEventListener('DOMContentLoaded', function(){
     a.addEventListener('click', closeNav);
   });
 
-  // Cookie consent
+  // Cookie consent + consent-gated Google Analytics (GA4)
   (function(){
+    var GA_ID = 'G-9BQBXXS1PD';
+    var gaLoaded = false;
+    function loadAnalytics(){
+      if(gaLoaded) return;
+      gaLoaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', GA_ID);
+    }
+
+    var consent = localStorage.getItem('cookie-consent');
+    if(consent === 'accepted') loadAnalytics();
+
     var banner = document.getElementById('cookie-banner');
     if(!banner) return;
-    if(localStorage.getItem('cookie-consent')){
+    if(consent){
       banner.style.display = 'none';
       return;
     }
@@ -45,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if(acceptBtn) acceptBtn.addEventListener('click', function(){
       localStorage.setItem('cookie-consent', 'accepted');
       banner.style.display = 'none';
+      loadAnalytics();
     });
     if(rejectBtn) rejectBtn.addEventListener('click', function(){
       localStorage.setItem('cookie-consent', 'rejected');
