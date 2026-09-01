@@ -92,8 +92,8 @@
       'price3.f2': 'Modificări mici incluse',
       'price3.f3': 'Suport prioritar <24h',
 
-      'about.label': 'Despre mine',
-      'about.h2': 'Cine sunt',
+      'about.label': 'Despre noi',
+      'about.h2': 'Cine suntem',
       'about.p': 'Vorbești direct cu cine îți construiește site-ul, fără intermediari. Suntem alături de tine la orice întrebare, de la prima discuție și până după ce site-ul e live. Lucrăm din Oradea, cu proiecte reale la activ și îți spunem mereu clar ce se poate face, ca să nu pierzi timpul cu promisiuni goale.',
       'about.imgAlt': 'Dezvoltare web și aplicații personalizate',
       'about.f1': 'Experiență locală — cunosc piața românească',
@@ -235,8 +235,8 @@
       'price3.f2': 'Small changes included',
       'price3.f3': 'Priority support <24h',
 
-      'about.label': 'About me',
-      'about.h2': 'Who I am',
+      'about.label': 'About us',
+      'about.h2': 'Who we are',
       'about.p': "You talk directly with the person building your site — no middlemen. We're here for any question, from the first conversation through to after your site goes live. We work from Oradea, with real projects behind us, and we'll always tell you clearly what's actually possible, so you don't waste time on empty promises.",
       'about.imgAlt': 'Web development and custom applications',
       'about.f1': 'Local experience — I know the Romanian market',
